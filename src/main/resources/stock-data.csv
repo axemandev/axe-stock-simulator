@@ -1,0 +1,5 @@
+﻿companyName,stockId,exchange,sector,fluctuationFactor,totalUnits,unitPrice,uom,effectiveAsOf
+Maruti Udyog,MARU,NSE,MANUFACTURING,7,200000,573.43,INR,
+State Bank of India,SBI,NSE,FINANCE,3,320000,783.29,INR,
+Ramki Towers,RMKI,NSE,REALTY,9,320030,13.43,INR,
+Reliance Petroleum,RELP,NSE,PETROLEUM,4,99000,1203.42,INR,
