@@ -12,6 +12,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.httpBasic;
 import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -40,7 +41,8 @@ class StockControllerTest {
 
     @Test
     void testGetIndexPath() throws Exception {
-        this.mockMvc.perform(get("/"))
+        this.mockMvc.perform(get("/stocks")
+                .with(httpBasic("user","password")))
                 .andExpect(status().isOk());
     }
 

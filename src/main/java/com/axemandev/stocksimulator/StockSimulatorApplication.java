@@ -21,7 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
-@Import({StockExceptionHandler.class})
 public class StockSimulatorApplication {
 
 	@Autowired
